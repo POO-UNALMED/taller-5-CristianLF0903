@@ -8,6 +8,17 @@ public class Anfibio extends Animal {
   static int salamandras = 0;
   private boolean venenoso;
   private String ColorPiel;
+  
+  public Anfibio(){}
+  
+  public Anfibio(String name, int age, String habit, String g, String color, boolean v){
+  	this.nombre = name;
+  	this.edad = age;
+  	this.habitat = habit;
+  	this.genero = g;
+  	this.colorPiel = color;
+  	this.venenoso = v;
+  }
 
   public Boolean getVenenoso() {
     return this.venenoso;

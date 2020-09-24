@@ -10,13 +10,12 @@ public class Animal {
   private String genero;
   private Zona zona;
 
-  public Animal(String name, int num, String habit, String g, Zona z) {
+  public Animal(String name, int num, String habit, String g) {
     totalAnimales++;
     this.nombre = name;
     this.edad = num;
     this.habitat = habit;
     this.genero = g;
-    this.zona = z;
   }
 
   public Animal() {

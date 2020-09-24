@@ -8,6 +8,17 @@ public class Pez extends Animal {
   static int bacalaos = 0;
   private String colorEscamas;
   private int cantidadAletas;
+  
+  public Pez(){}
+  
+  public Pez(String name, int age, String habit, String g, String color, int cant){
+  	this.nombre = name;
+  	this.edad = age;
+  	this.habitat = habit;
+  	this.genero = g;
+  	this.colorEscamas;
+  	this.cantidadAletas;
+  }
 
   public static int cantidadPeces() {
     return listado.size();
