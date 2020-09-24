@@ -8,8 +8,7 @@ public class Ave extends Animal{
     static int halcones = 0;
     private String colorPlumas;
     
-    public Ave(){
-    }
+    public Ave(){totalAnimales++; listado.add(this);}
     
     public Ave(String name, int age, String habit, String g, String color){
     	this.nombre = name;
@@ -17,6 +16,7 @@ public class Ave extends Animal{
  	  	this.habitat = habit;
  	  	this.genero = g;
  	  	this.colorPlumas = color;
+ 	  	totalAnimales++;
     }
 
     public String getColorPlumas() {
@@ -31,22 +31,14 @@ public class Ave extends Animal{
         return listado.size();
     }
 
-    public void crearAguila(){
-        Ave x = new Ave();
-        x.colorPlumas = "blanco y amarillo";
-        x.setHabitat("monta�as");
-        aguilas++;
-        totalAnimales++;
-        listado.add(x);
+    public void crearAguila(String name, int age, String g){
+    	Ave x = new Ave(name, age, "montana", g, "blanco y amarillo")
+    	aguilas++;
     }
 
-    public void crearHalon(){
-        Ave x = new Ave();
-        x.colorPlumas = "cafe glorioso";
-        x.setHabitat("monta�as");
+    public void crearHalon(String name, int age, String g){
+        Ave x = new Ave(name, age, "montana", g, "café glorioso");
         halcones++;
-        totalAnimales++;
-        listado.add(x);
     }
 
     public String movimiento() {

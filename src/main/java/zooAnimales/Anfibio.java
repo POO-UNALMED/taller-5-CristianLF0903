@@ -9,7 +9,7 @@ public class Anfibio extends Animal {
   private boolean venenoso;
   private String ColorPiel;
   
-  public Anfibio(){}
+  public Anfibio(){totalAnimales++; listado.add(this);}
   
   public Anfibio(String name, int age, String habit, String g, String color, boolean v){
   	this.nombre = name;
@@ -18,6 +18,8 @@ public class Anfibio extends Animal {
   	this.genero = g;
   	this.colorPiel = color;
   	this.venenoso = v;
+  	totalAnimales++;
+  	listado.add(this);
   }
 
   public Boolean getVenenoso() {
@@ -40,24 +42,14 @@ public class Anfibio extends Animal {
     return listado.size();
   }
 
-  public void crearSalamandra() {
-    Anfibio x = new Anfibio();
-    x.ColorPiel = "negro y amarillo";
-    x.venenoso = false;
-    x.setHabitat("selva");
+  public void crearSalamandra(String name, int age, String g) {
+    Anfibio x = new Anfibio(name, agen, "selva", g, "negro y amarillo", false);
     salamandras++;
-    totalAnimales++;
-    listado.add(x);
   }
 
-  public void crearRanas() {
-    Anfibio x = new Anfibio();
-    x.ColorPiel = "rojo";
-    x.venenoso = true;
-    x.setHabitat("selva");
-    ranas++;
-    totalAnimales++;
-    listado.add(x);
+  public void crearRana(String name, int age, String g) {
+      Anfibio x = new Anfibio(name, agen, "selva", g, "negro y amarillo", false);
+      ranas++;
   }
 
   public String movimiento() {

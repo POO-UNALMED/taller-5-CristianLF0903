@@ -9,7 +9,7 @@ public class Reptil extends Animal {
   private String colorEscamas;
   private int largoCola;
 
-	public Reptil(){}
+	public Reptil(){totalAnimales++; listado.add(this);}
 	
 	public Reptil(String name, int age, String habit, String g, String color, int l){
 		this.nombre = name;
@@ -18,6 +18,8 @@ public class Reptil extends Animal {
   	this.genero = g;
   	this.colorEscamas = color;
   	this.largoCola = l;
+  	totalAnimales++;
+  	listado.add(this);
 	}
 	
   public String getColorEscamas(){
@@ -40,24 +42,14 @@ public class Reptil extends Animal {
     return listado.size();
   }
 
-  public void crearIguana() {
-    Reptil x = new Reptil();
-    x.colorEscamas = "verde";
-    x.largoCola = 3;
-    x.setHabitat("humedal");
+  public void crearIguana(String name, int age, String g) {
+    Reptil x = new Reptil(name, age, "humedal", g, "verde",3);
     iguanas++;
-    totalAnimales++;
-    listado.add(x);
   }
 
-  public void crearSerpiente() {
-    Reptil x = new Reptil();
-    x.colorEscamas = "blanco";
-    x.largoCola = 1;
-    x.setHabitat("jungla");
+  public void crearSerpiente(String name, int age, String g) {
+    Reptil x = new Reptil(name, age, "jungla",g,"blanco",1);
     serpientes++;
-    totalAnimales++;
-    listado.add(x);
   }
 
   public String movimiento() {

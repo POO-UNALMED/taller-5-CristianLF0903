@@ -9,7 +9,7 @@ public class Pez extends Animal {
   private String colorEscamas;
   private int cantidadAletas;
   
-  public Pez(){}
+  public Pez(){totalAnimales++; listado.add(this);}
   
   public Pez(String name, int age, String habit, String g, String color, int cant){
   	this.nombre = name;
@@ -18,30 +18,22 @@ public class Pez extends Animal {
   	this.genero = g;
   	this.colorEscamas;
   	this.cantidadAletas;
+  	totalAnimales++;
+  	listado.add(this);
   }
 
   public static int cantidadPeces() {
     return listado.size();
   }
 
-  public void crearSalmon() {
-    Pez x = new Pez();
-    x.cantidadAletas = 6;
-    x.colorEscamas = "rojo";
-    x.setHabitat("oceano");
+  public void crearSalmon(String name, int age, String g) {
+    Pez x = new Pez(name, age, "oceano", g, "rojo", 6);
     salmones++;
-    totalAnimales++;
-    listado.add(x);
   }
 
-  public void crearBacalo() {
-    Pez x = new Pez();
-    x.cantidadAletas = 6;
-    x.colorEscamas = "gris";
-    x.setHabitat("oceano");
+  public void crearBacalo(String name, int age, String g) {
+    Pez x = new Pez(name, age, "oceano", g, "gris", 6);
     bacalaos++;
-    totalAnimales++;
-    listado.add(x);
   }
 
   public String movimiento() {
