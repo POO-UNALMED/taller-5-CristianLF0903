@@ -43,12 +43,12 @@ public class Reptil extends Animal {
   }
 
   public void crearIguana(String name, int age, String g) {
-    Reptil x = new Reptil(name, age, "humedal", g, "verde",3);
+    new Reptil(name, age, "humedal", g, "verde",3);
     iguanas++;
   }
 
   public void crearSerpiente(String name, int age, String g) {
-    Reptil x = new Reptil(name, age, "jungla",g,"blanco",1);
+    new Reptil(name, age, "jungla",g,"blanco",1);
     serpientes++;
   }
 

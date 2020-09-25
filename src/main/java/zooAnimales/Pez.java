@@ -27,12 +27,12 @@ public class Pez extends Animal {
   }
 
   public void crearSalmon(String name, int age, String g) {
-    Pez x = new Pez(name, age, "oceano", g, "rojo", 6);
+    new Pez(name, age, "oceano", g, "rojo", 6);
     salmones++;
   }
 
   public void crearBacalo(String name, int age, String g) {
-    Pez x = new Pez(name, age, "oceano", g, "gris", 6);
+    new Pez(name, age, "oceano", g, "gris", 6);
     bacalaos++;
   }
 

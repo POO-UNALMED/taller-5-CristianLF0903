@@ -43,12 +43,12 @@ public class Anfibio extends Animal {
   }
 
   public void crearSalamandra(String name, int age, String g) {
-    Anfibio x = new Anfibio(name, age, "selva", g, "negro y amarillo", false);
+    new Anfibio(name, age, "selva", g, "negro y amarillo", false);
     salamandras++;
   }
 
   public void crearRana(String name, int age, String g) {
-      Anfibio x = new Anfibio(name, age, "selva", g, "negro y amarillo", false);
+      new Anfibio(name, age, "selva", g, "negro y amarillo", false);
       ranas++;
   }
 

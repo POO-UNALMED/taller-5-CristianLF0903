@@ -103,5 +103,6 @@ public class Animal {
     "Reptiles: " + Integer.toString(Reptil.cantidadReptiles()) + "\n" +
     "Peces: " + Integer.toString(Pez.cantidadPeces()) + "\n" +
     "Anfibios: " + Integer.toString(Anfibio.cantidadAnfibios());
+    return total;
   }
 }

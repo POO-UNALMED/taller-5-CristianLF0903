@@ -33,12 +33,12 @@ public class Ave extends Animal{
     }
 
     public void crearAguila(String name, int age, String g){
-    	Ave x = new Ave(name, age, "montana", g, "blanco y amarillo");
+    	new Ave(name, age, "montana", g, "blanco y amarillo");
     	aguilas++;
     }
 
     public void crearHalon(String name, int age, String g){
-        Ave x = new Ave(name, age, "montana", g, "cafe glorioso");
+        new Ave(name, age, "montana", g, "cafe glorioso");
         halcones++;
     }
 

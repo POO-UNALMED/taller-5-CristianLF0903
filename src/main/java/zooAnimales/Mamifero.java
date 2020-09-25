@@ -27,12 +27,12 @@ public class Mamifero extends Animal{
   }
 
   public void crearCaballo(String name, int age, String g) {
-    Mamifero x = new Mamifero(name, age, "pradera", g, true, 4);
+    new Mamifero(name, age, "pradera", g, true, 4);
     caballos++;
   }
 
   public void crearLeon(String name, int age, String g) {
-    Mamifero x = new Mamifero(name, age, "pradera", g, true, 4);
+    new Mamifero(name, age, "pradera", g, true, 4);
     leones++;
   }
 
