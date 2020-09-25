@@ -78,9 +78,9 @@ public class Animal {
         " y mi genero es " +
         this.genero +
         ", la zona en la que me ubico es " +
-        this.zona.getNombre() +
+        this.getZona().getNombre() +
         ", en el " +
-        zona.getZoo().getNombre()
+        this.getZona().getZoo().getNombre()
       );
     } else {
       return (
