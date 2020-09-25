@@ -31,11 +31,11 @@ public class Anfibio extends Animal {
   }
 
   public String getColorPiel() {
-    return this.ColorPiel;
+    return this.colorPiel;
   }
 
   public void setPelaje(String y) {
-    this.ColorPiel = y;
+    this.colorPiel = y;
   }
 
   public static int cantidadAnfibios() {
