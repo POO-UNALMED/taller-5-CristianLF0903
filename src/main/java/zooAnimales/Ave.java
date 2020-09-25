@@ -16,7 +16,7 @@ public class Ave extends Animal{
  	  	this.setHabitat(habit);
  	  	this.setGenero(g);
  	  	this.colorPlumas = color;
- 	  	totalAnimales++
+ 	  	totalAnimales++;
  	  	listado.add(this);
     }
 
