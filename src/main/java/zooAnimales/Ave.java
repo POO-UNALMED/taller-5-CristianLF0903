@@ -11,10 +11,10 @@ public class Ave extends Animal{
     public Ave(){totalAnimales++; listado.add(this);}
     
     public Ave(String name, int age, String habit, String g, String color){
-    	this.nombre = name;
-    	this.edad = age;
- 	  	this.habitat = habit;
- 	  	this.genero = g;
+    	this.setNombre(name);
+    	this.setEdad(age);
+ 	  	this.setHabitat(habit);
+ 	  	this.setGenero(g);
  	  	this.colorPlumas = color;
  	  	totalAnimales++;
     }
