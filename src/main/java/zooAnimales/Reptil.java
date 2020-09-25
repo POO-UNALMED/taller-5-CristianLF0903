@@ -12,10 +12,10 @@ public class Reptil extends Animal {
 	public Reptil(){totalAnimales++; listado.add(this);}
 	
 	public Reptil(String name, int age, String habit, String g, String color, int l){
-		this.nombre = name;
-  	this.edad = age;
-  	this.habitat = habit;
-  	this.genero = g;
+		this.setNombre(name);
+		this.setEdad(age);
+		this.setHabitat(habit);
+		this.setGenero(g);
   	this.colorEscamas = color;
   	this.largoCola = l;
   	totalAnimales++;

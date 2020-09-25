@@ -12,10 +12,10 @@ public class Anfibio extends Animal {
   public Anfibio(){totalAnimales++; listado.add(this);}
   
   public Anfibio(String name, int age, String habit, String g, String color, boolean v){
-  	this.nombre = name;
-  	this.edad = age;
-  	this.habitat = habit;
-  	this.genero = g;
+  	this.setNombre(name);
+  	this.setEdad(age);
+  	this.setHabitat(habit);
+  	this.setGenero(g);
   	this.colorPiel = color;
   	this.venenoso = v;
   	totalAnimales++;
