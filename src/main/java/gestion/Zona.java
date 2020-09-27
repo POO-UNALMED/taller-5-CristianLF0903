@@ -38,10 +38,6 @@ public class Zona {
     animales.add(a);
   }public void agregarAnimales(Reptil a) {
     animales.add(a);
-    
-  }public void setZoo(Zoologico z) {
-    this.zoo = z;
-  }
 
   public int cantidadAnimales() {
     return animales.size();
