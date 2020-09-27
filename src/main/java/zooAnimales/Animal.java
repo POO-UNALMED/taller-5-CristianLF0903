@@ -96,7 +96,7 @@ public class Animal {
     }
   }
 
-  public String totalPorTipo() {
+  public static String totalPorTipo() {
     String total;
     total = "Mamifero: " + Integer.toString(Mamifero.cantidadMamiferos()) + "\n" +
     "Aves: " + Integer.toString(Ave.cantidadAves()) + "\n" +
