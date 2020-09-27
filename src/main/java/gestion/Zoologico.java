@@ -33,9 +33,8 @@ public class Zoologico {
 
   public int cantidadTotalAnimales() {
     int animales = 0;
-    for (int i = 0; i < zonas.size(); i++) {
-      Zona zone = zonas.get(i);
-      int num = zone.cantidadAnimales();
+    for (int i = 0; i < this.zonas.size(); i++) {
+      int num = this.zonas.get(i).getAnimales().size();
       animales = animales + num;
     }
     return animales;
@@ -49,7 +48,7 @@ public class Zoologico {
     return this.ubicacion;
   }
 
-  public ArrayList<Zona> getZonas() {
+  public ArrayList<Zona> getZona() {
     return this.zonas;
   }
 }
