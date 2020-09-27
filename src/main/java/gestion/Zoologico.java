@@ -16,7 +16,6 @@ public class Zoologico {
 
   public void agregarZonas(Zona zone) {
     zonas.add(zone);
-    zone.setZoo(this);
   }
 
   public void setUbicacion(String ub) {

@@ -18,31 +18,29 @@ public class Zona {
   public void setNombre(String name) {
     this.nombre = name;
   }
+  
+  public void setZoo(Zoologico z){
+  	this.zoo = z;
+  }
 
   public void setAnimales(ArrayList<Animal> list) {
     this.animales = list;    
   }
   public void agregarAnimales(Animal a) {
     animales.add(a);
-    a.setZona(this);
   }public void agregarAnimales(Anfibio a) {
     animales.add(a);
-    a.setZona(this);
   }public void agregarAnimales(Ave a) {
     animales.add(a);
-    a.setZona(this);
   }public void agregarAnimales(Mamifero a) {
     animales.add(a);
-    a.setZona(this);
   }public void agregarAnimales(Pez a) {
     animales.add(a);
-    a.setZona(this);
   }public void agregarAnimales(Reptil a) {
     animales.add(a);
-    a.setZona(this);
+    
   }public void setZoo(Zoologico z) {
     this.zoo = z;
-    z.agregarZonas(this);
   }
 
   public int cantidadAnimales() {
