@@ -29,11 +29,11 @@ public class TestRetornos {
 		new Ave();
 		new Ave();
 		boolean ok = false;
-		String  comp = "Mamiferos: 3\n" + 
-				"Aves: 2\n" + 
-				"Reptiles: 1\n" + 
-				"Peces: 1\n" + 
-				"Anfibios: 2";
+		String  comp = "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
 		if(Animal.totalPorTipo().equals(comp)) {
 			ok = true;
 		}
